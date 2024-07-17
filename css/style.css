@@ -1,79 +1,81 @@
+@charset "UTF-8";
 /* reseteo de código para todos los navegadores */
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    background-color: rgb(174, 226, 174);
-    font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(174, 226, 174);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header, h1, h2 {
-    background-color: green;
-    text-align: center;
-    color: black;
-    padding: 5px;
-    margin: 10px;
-    font-family: "shantell sans", cursive;
+  background-color: green;
+  text-align: center;
+  color: black;
+  padding: 5px;
+  margin: 10px;
+  font-family: "shantell sans", cursive;
 }
 
 .greenyellow.greenyellow:hover {
-    color: greenyellow;
+  color: greenyellow;
 }
 
 header img {
-    width: 150px;
-    border-radius: 20%;
-    padding: 5px;
-    border: greenyellow 3px solid;
-    margin-top: 20px;
+  width: 150px;
+  border-radius: 20%;
+  padding: 5px;
+  border: greenyellow 3px solid;
+  margin-top: 20px;
 }
 
 header nav ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 li {
-    display: inline-block;
-    padding: 10px;
+  display: inline-block;
+  padding: 10px;
 }
 
 li a:hover {
-    color: green;
-    background-color: white;
+  color: green;
+  background-color: white;
 }
 
 a {
-    color: rgb(23, 21, 21);
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-  
-    margin: 10px;
-    border: black 2px solid;
-    padding: 1px;
+  color: rgb(23, 21, 21);
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 10px;
+  border: black 2px solid;
+  padding: 1px;
 }
 
 .subt {
-    color: greenyellow;
-    text-align: center;
+  color: greenyellow;
+  text-align: center;
 }
 
 p {
-    padding: 20px;
-    line-height: 1.5;
-    font-size: 1.2rem;
+  padding: 20px;
+  line-height: 1.5;
+  font-size: 1.2rem;
 }
 
 footer {
-    margin: 10px auto;
-    background-color: green;
-    padding: 20px;
-    text-align: center;
-    color: aliceblue;
+  margin: 10px auto;
+  background-color: green;
+  padding: 20px;
+  text-align: center;
+  color: aliceblue;
 }
 
 h4 {
-    text-align: center;
+  text-align: center;
 }
+
+/*# sourceMappingURL=style.css.map */
