@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* reseteo de código para todos los navegadores */
+/* Reseteo de código para todos los navegadores */
 * {
   padding: 0;
   margin: 0;
@@ -76,6 +76,34 @@ footer {
 
 h4 {
   text-align: center;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  body {
+    background-color: lightgreen;
+  }
+  header, h1, h2 {
+    padding: 10px;
+    margin: 5px;
+  }
+  header img {
+    width: 100px;
+  }
+  li {
+    padding: 5px;
+  }
+  a {
+    font-size: 0.8rem;
+    padding: 2px;
+  }
+  p {
+    padding: 10px;
+    font-size: 1rem;
+  }
+  footer {
+    padding: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
