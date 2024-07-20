@@ -84,3 +84,15 @@
     text-align: center;
     color: aliceblue;
   }
+
+  .pdf-container {
+    width: 100%;
+    height: 80vh; /* Ajusta la altura al 80% de la altura de la vista del navegador */
+    overflow: auto; /* Permite el desplazamiento si el contenido es más grande */
+}
+
+.pdf-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
