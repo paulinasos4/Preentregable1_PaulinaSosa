@@ -1,98 +1,123 @@
 /* Mixins */
 @mixin text-style($color, $size, $weight) {
-    color: $color;
-    font-size: $size;
-    font-weight: $weight;
-  }
-  
-  @mixin rounded-borders($radius) {
-    border-radius: $radius;
-  }
-  
-  /* Estilos */
-  * {
-    padding: 0;
-    margin: 0;
-  }
-  
-  body {
-    background-color: rgb(174, 226, 174);
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  header, h1, h2 {
-    background-color: green;
-    text-align: center;
-    color: black;
-    padding: 5px;
-    margin: 10px;
-    font-family: "shantell sans", cursive;
-    @include text-style(black, 2rem, bold);
-  }
-  
-  .greenyellow.greenyellow:hover {
-    color: greenyellow;
-  }
-  
-  header img {
-    width: 150px;
-    @include rounded-borders(20%);
-    padding: 5px;
-    border: greenyellow 3px solid;
-    margin-top: 20px;
-  }
-  
-  header nav ul {
-    list-style-type: none;
-  }
-  
-  li {
-    display: inline-block;
-    padding: 10px;
-  }
-  
-  li a:hover {
-    color: green;
-    background-color: white;
-  }
-  
-  a {
-    color: rgb(23, 21, 21);
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    margin: 10px;
-    border: black 2px solid;
-    padding: 1px;
-  }
-  
-  .subt {
-    color: greenyellow;
-    text-align: center;
-  }
-  
-  p {
-    padding: 20px;
-    line-height: 1.5;
-    font-size: 1.2rem;
-  }
-  
-  footer {
-    margin: 10px auto;
-    background-color: green;
-    padding: 20px;
-    text-align: center;
-    color: aliceblue;
-  }
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+}
 
-  .pdf-container {
-    width: 100%;
-    height: 80vh; /* Ajusta la altura al 80% de la altura de la vista del navegador */
-    overflow: auto; /* Permite el desplazamiento si el contenido es más grande */
+@mixin rounded-borders($radius) {
+  border-radius: $radius;
+}
+
+/* Estilos */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(174, 226, 174);
+  font-family: Arial, Helvetica, sans-serif;
+  animation: fadeIn 2s ease-in-out;
+}
+
+header, h1, h2 {
+  background-color: green;
+  text-align: center;
+  color: black;
+  padding: 5px;
+  margin: 10px;
+  font-family: "Shantell Sans", cursive;
+  @include text-style(black, 2rem, bold);
+}
+
+.greenyellow:hover {
+  color: greenyellow;
+}
+
+header img {
+  width: 150px;
+  @include rounded-borders(20%);
+  padding: 5px;
+  border: greenyellow 3px solid;
+  margin-top: 20px;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  padding: 10px;
+}
+
+li a:hover {
+  color: green;
+  background-color: white;
+}
+
+a {
+  color: rgb(23, 21, 21);
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 10px;
+  border: black 2px solid;
+  padding: 1px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.subt {
+  color: greenyellow;
+  text-align: center;
+}
+
+p {
+  padding: 20px;
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
+footer {
+  margin: 10px auto;
+  background-color: green;
+  padding: 20px;
+  text-align: center;
+  color: aliceblue;
+}
+
+.pdf-container {
+  width: 100%;
+  height: 80vh; /* Ajusta la altura al 80% de la altura de la vista del navegador */
+  overflow: auto; /* Permite el desplazamiento si el contenido es más grande */
 }
 
 .pdf-container iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
+
+.location-img {
+  display: block; /* Asegura que no haya espacio extra debajo de la imagen */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+.col-md-6 img {
+  width: 100%; /* Asegura que las imágenes ocupen el 100% del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin-bottom: 10px; /* Agrega un margen inferior para separar las imágenes del texto */
+}
+
+/* Animación de fadeIn */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
