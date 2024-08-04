@@ -1,3 +1,9 @@
+/* Variables */
+$primary-color: green;
+$secondary-color: greenyellow;
+$background-color: rgb(174, 226, 174);
+$text-color: black;
+
 /* Mixins */
 @mixin text-style($color, $size, $weight) {
   color: $color;
@@ -16,30 +22,30 @@
 }
 
 body {
-  background-color: rgb(174, 226, 174);
+  background-color: $background-color;
   font-family: Arial, Helvetica, sans-serif;
   animation: fadeIn 2s ease-in-out;
 }
 
 header, h1, h2 {
-  background-color: green;
+  background-color: $primary-color;
   text-align: center;
-  color: black;
+  color: $text-color;
   padding: 5px;
   margin: 10px;
   font-family: "Shantell Sans", cursive;
-  @include text-style(black, 2rem, bold);
+  @include text-style($text-color, 2rem, bold);
 }
 
 .greenyellow:hover {
-  color: greenyellow;
+  color: $secondary-color;
 }
 
 header img {
   width: 150px;
   @include rounded-borders(20%);
   padding: 5px;
-  border: greenyellow 3px solid;
+  border: $secondary-color 3px solid;
   margin-top: 20px;
 }
 
@@ -53,7 +59,7 @@ li {
 }
 
 li a:hover {
-  color: green;
+  color: $primary-color;
   background-color: white;
 }
 
@@ -63,13 +69,13 @@ a {
   font-weight: bold;
   text-decoration: none;
   margin: 10px;
-  border: black 2px solid;
+  border: $text-color 2px solid;
   padding: 1px;
   transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .subt {
-  color: greenyellow;
+  color: $secondary-color;
   text-align: center;
 }
 
@@ -81,7 +87,7 @@ p {
 
 footer {
   margin: 10px auto;
-  background-color: green;
+  background-color: $primary-color;
   padding: 20px;
   text-align: center;
   color: aliceblue;
@@ -119,5 +125,6 @@ footer {
     opacity: 1;
   }
 }
+
 
 

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Variables */
 /* Mixins */
 /* Estilos */
 * {
@@ -9,6 +10,7 @@
 body {
   background-color: rgb(174, 226, 174);
   font-family: Arial, Helvetica, sans-serif;
+  animation: fadeIn 2s ease-in-out;
 }
 
 header, h1, h2 {
@@ -17,7 +19,7 @@ header, h1, h2 {
   color: black;
   padding: 5px;
   margin: 10px;
-  font-family: "shantell sans", cursive;
+  font-family: "Shantell Sans", cursive;
   color: black;
   font-size: 2rem;
   font-weight: bold;
@@ -57,6 +59,7 @@ a {
   margin: 10px;
   border: black 2px solid;
   padding: 1px;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .subt {
@@ -99,6 +102,16 @@ footer {
   width: 100%; /* Asegura que las imágenes ocupen el 100% del contenedor */
   height: auto; /* Mantiene la proporción de la imagen */
   margin-bottom: 10px; /* Agrega un margen inferior para separar las imágenes del texto */
+}
+
+/* Animación de fadeIn */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
